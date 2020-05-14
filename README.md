@@ -81,11 +81,11 @@ public class TestClass {
                     int nextRockPosition = l+1;
                     int rockLength = rockPosition.get(l) - prePos;
 
-                    //뜀박질이 더 넓어
+                    //뜀박질이 더 넓을 때
                     if (k > rockLength) {
 
 
-//                        // 다음 돌이 마지막 돌이야
+//                        // 다음 돌이 마지막 돌일 때
                         if (nextRockPosition == rockPosition.size()) {
                             minJumpCount = minJumpCount + 1;
                             break outerloop;
@@ -94,15 +94,15 @@ public class TestClass {
 
                         isGoNext = true;
 
-                        //뜀박질이 같아
+                        //뜀박질이 같을 때
                     } else if (k == rockLength) {
                         minJumpCount = minJumpCount + 1;
                         j = l - 1;
                         break;
 
-                        //뜀박질이 적어
+                        //뜀박질이 적을 때
                     } else if (k < rockLength) {
-                        // 한번이라도 뛰어넘은 적이 있어
+                        // 한번이라도 뛰어넘은 적이 있을 
                         if (isGoNext) {
                             minJumpCount = minJumpCount + 1;
                             j = l - 2;
