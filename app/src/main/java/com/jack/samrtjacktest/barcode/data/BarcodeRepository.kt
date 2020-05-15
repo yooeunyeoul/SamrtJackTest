@@ -1,4 +1,4 @@
-package com.jack.samrtjacktest.di.barcode.data
+package com.jack.samrtjacktest.barcode.data
 
 import com.jack.samrtjacktest.api.ApiService
 import com.jack.samrtjacktest.data.SendData

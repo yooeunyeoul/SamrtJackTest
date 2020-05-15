@@ -1,4 +1,4 @@
-package com.jack.samrtjacktest.di.barcode.ui
+package com.jack.samrtjacktest.barcode.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -70,7 +70,9 @@ class FragmentBarcode : DaggerFragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == IntentIntegrator.REQUEST_CODE) {
-
+            if (data == null) {
+                return
+            }
             val result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
 
             val sendData = SendData(value = result.contents, name = result.formatName, phone = "")
@@ -80,7 +82,7 @@ class FragmentBarcode : DaggerFragment() {
             viewModel.sendData(
                 name = result.formatName,
                 phone = "010-5555-0000",
-                value = "ddd"
+                value = "컨텐츠가 길어 전송이 안됩니다."
             )
 
             Log.i("TAG", ">>> result.getContents()   :  " + result.contents);

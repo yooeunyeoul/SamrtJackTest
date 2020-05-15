@@ -10,7 +10,7 @@
 
         <fragment
             android:id="@+id/fragment_barcode"
-            android:name="com.jack.samrtjacktest.di.barcode.ui.FragmentBarcode"
+            android:name="com.jack.samrtjacktest.barcode.ui.FragmentBarcode"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

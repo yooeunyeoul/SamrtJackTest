@@ -1,9 +1,9 @@
-package com.jack.samrtjacktest.di.barcode.ui
+package com.jack.samrtjacktest.barcode.ui
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.jack.samrtjacktest.data.SendData
-import com.jack.samrtjacktest.di.barcode.data.BarcodeRepository
+import com.jack.samrtjacktest.barcode.data.BarcodeRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.observers.DisposableSingleObserver

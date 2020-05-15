@@ -2,7 +2,7 @@ package com.jack.samrtjacktest.di
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.jack.samrtjacktest.di.barcode.ui.BarcodeViewModel
+import com.jack.samrtjacktest.barcode.ui.BarcodeViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
